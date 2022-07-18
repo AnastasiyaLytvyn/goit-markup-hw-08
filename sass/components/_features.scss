@@ -1,22 +1,32 @@
 .features {
   &__list {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin: 0;
-    padding: 0;
   }
 
   &__item {
     padding: 0;
     width: 100%;
-  }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+    }
   }
 
   &__items {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+
     border-radius: 4px;
     background-color: #f5f4fa;
   }
@@ -30,6 +40,11 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
 
   &__text {
