@@ -1,0 +1,42 @@
+.features {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    padding: 0;
+    width: 270px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__items {
+    padding: 25px 102px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    padding: 0;
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}

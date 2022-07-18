@@ -1,0 +1,22 @@
+// variables
+@import "./utils/variables";
+
+// base styles
+@import "./base/base";
+@import "./base/reset";
+@import "./base/container";
+
+// components
+@import "./components/header";
+@import "./components/hero";
+@import "./components/features";
+@import "./components/benefits";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/socials";
+@import "./components/subscription";
+@import "./components/adress";
+@import "./components/modal";
+@import "./components/work";
+@import "./components/examples";

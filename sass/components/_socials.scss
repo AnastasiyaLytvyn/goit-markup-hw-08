@@ -1,0 +1,47 @@
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-right: 93px;
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--primary-white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition-property: color, background-color;
+    transition-duration: var(--fast-animation);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon {
+    fill: var(--primary-white-color);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--accent-color);
+  }
+}

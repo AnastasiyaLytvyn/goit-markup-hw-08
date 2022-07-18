@@ -1,0 +1,50 @@
+.adress {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  & .adressa {
+    color: var(--primary-white-color);
+    font-style: normal;
+
+    text-decoration: none;
+    transition-property: color, background-color;
+    transition-duration: var(--fast-animation);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  & .adressa:hover,
+  & .adressa:focus {
+    color: var(--accent-color);
+  }
+
+  & .mail {
+    color: var(--secondary-text-color);
+    font-style: normal;
+
+    text-decoration: none;
+    transition-property: color, background-color;
+    transition-duration: var(--fast-animation);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  & .mail:hover,
+  & .mail:focus {
+    color: var(--accent-color);
+  }
+
+  & .tel {
+    color: var(--secondary-text-color);
+    font-style: normal;
+
+    text-decoration: none;
+    transition-property: color, background-color;
+    transition-duration: var(--fast-animation);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  & .tel:hover,
+  & .tel:focus {
+    color: var(--accent-color);
+  }
+}

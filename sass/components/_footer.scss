@@ -1,0 +1,39 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0;
+  background-color: #2f303a;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+  &__logo {
+    margin-bottom: 20px;
+    color: #2196f3;
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+
+    text-decoration: none;
+  }
+  &__list {
+    padding: 0;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.left-side {
+  margin-right: 70px;
+}
+
+.logo-footer {
+  margin-bottom: 20px;
+}
+
+.accents {
+  color: var(--primary-white-color);
+}
