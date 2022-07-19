@@ -173,6 +173,12 @@
   padding-top: 48px;
   padding-bottom: 48px;
   background-color: var(--primary-white-color);
+
+  .is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
 }
 .container-menu {
   max-width: 430px;
