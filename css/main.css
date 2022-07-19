@@ -310,7 +310,8 @@ img {
   padding-bottom: 48px;
   background-color: var(--primary-white-color);
 }
-.mob-menu .is-hidden {
+
+.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
