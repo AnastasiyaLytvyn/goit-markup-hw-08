@@ -367,6 +367,11 @@ img {
   border: none;
 }
 
+.menu-close:hover,
+.menu-close:focus {
+  fill: var(--accent-color);
+}
+
 .mob-menu-list {
   padding: 0;
 }
