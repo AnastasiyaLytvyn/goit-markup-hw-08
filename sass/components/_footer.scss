@@ -7,7 +7,25 @@
   &__container {
     display: flex;
     align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+      justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
   }
+
   &__logo {
     margin-bottom: 20px;
     color: #2196f3;
@@ -22,12 +40,24 @@
   }
 
   &__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
   }
 }
 
 .left-side {
   margin-right: 70px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-start;
+  }
 }
 
 .logo-footer {
@@ -36,4 +66,16 @@
 
 .accents {
   color: var(--primary-white-color);
+}
+
+.adressa {
+  display: flex;
+  justify-content: center;
+}
+.mail {
+  justify-content: center;
+}
+.tel {
+  display: flex;
+  justify-content: center;
 }
