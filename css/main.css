@@ -231,14 +231,19 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-left: auto;
+    gap: 10px;
   }
 }
-.contact .phone {
-  margin-right: auto;
-}
-.contact__list:not(:last-child) {
-  margin-right: 50px;
-  padding: 0;
+@media screen and (min-width: 1200px) {
+  .contact .phone {
+    margin-right: auto;
+  }
 }
 .contact__list {
   display: -webkit-box;
@@ -250,6 +255,11 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+}
+@media screen and (min-width: 768px) {
+  .contact__list {
+    margin-left: auto;
+  }
 }
 .contact__list .mail, .contact__list .phone {
   color: var(--primary-text-color);
@@ -305,6 +315,11 @@ img {
   padding: 12px 8px;
   background-color: white;
   border: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
 }
 
 .mob-menu {
@@ -544,7 +559,7 @@ img {
   padding-bottom: 94px;
   margin: 0;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .benefits {
     display: none;
   }

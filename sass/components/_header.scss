@@ -99,17 +99,20 @@
   padding: 0;
   margin-left: auto;
 
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: auto;
+    gap: 10px;
   }
 
   & .phone {
-    margin-right: auto;
+    @media screen and (min-width: 1200px) {
+      margin-right: auto;
+    }
   }
-  &__list:not(:last-child) {
-    margin-right: 50px;
-    padding: 0;
-  }
+
   &__list {
     display: flex;
     align-items: center;
@@ -117,6 +120,9 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    @media screen and (min-width: 768px) {
+      margin-left: auto;
+    }
   }
   &__list .mail,
   &__list .phone {
@@ -167,6 +173,10 @@
   padding: 12px 8px;
   background-color: white;
   border: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .mob-menu {
