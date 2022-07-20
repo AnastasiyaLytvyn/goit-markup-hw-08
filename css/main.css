@@ -1028,6 +1028,10 @@ img {
   background-color: var(--accent-color);
 }
 
+.subscription-set {
+  width: 100%;
+}
+
 .subscription__title {
   text-align: center;
   font-style: normal;
@@ -1075,7 +1079,7 @@ img {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   padding: 15px 16px;
   outline: none;
