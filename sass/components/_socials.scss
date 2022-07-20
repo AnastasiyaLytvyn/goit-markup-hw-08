@@ -5,6 +5,10 @@
   gap: 20px;
   margin-right: 0;
 
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
+
   &__title {
     font-style: normal;
     font-weight: 700;
