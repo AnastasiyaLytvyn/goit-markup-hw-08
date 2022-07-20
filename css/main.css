@@ -877,6 +877,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1026,10 +1028,6 @@ img {
 }
 .socials__link:hover, .socials__link:focus {
   background-color: var(--accent-color);
-}
-
-.subscription-set {
-  width: 100%;
 }
 
 .subscription__title {
