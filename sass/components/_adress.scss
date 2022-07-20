@@ -3,6 +3,12 @@
   font-size: 14px;
   line-height: 1.71;
 
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   & .adressa {
     color: var(--primary-white-color);
     font-style: normal;
