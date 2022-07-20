@@ -1702,7 +1702,7 @@ textarea {
 .examples-text {
   position: absolute;
   width: 100%;
-  padding: 63px 24px;
+  padding: 77px 24px;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   background-color: var(--accent-color);
@@ -1714,6 +1714,11 @@ textarea {
   transition: -webkit-transform var(--fast-animation) cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform var(--fast-animation) cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform var(--fast-animation) cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform var(--fast-animation) cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .examples-text {
+    padding: 63px 24px;
+  }
 }
 
 .examples-desc {
