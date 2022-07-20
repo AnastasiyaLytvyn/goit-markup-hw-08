@@ -19,6 +19,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+
     @media screen and (min-width: 1200px) {
       display: inline-flex;
       flex-direction: row;
@@ -33,7 +34,7 @@
     line-height: calc(20 / 16);
     letter-spacing: 0.03em;
 
-    max-width: 450px;
+    width: 450px;
     height: 50px;
     padding: 15px 16px;
     outline: none;
