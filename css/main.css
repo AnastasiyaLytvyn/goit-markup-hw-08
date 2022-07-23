@@ -882,6 +882,11 @@ img {
   padding: 0;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    margin-bottom: 0;
+  }
+}
 .footer__item:not(:last-child) {
   margin-bottom: 8px;
 }
